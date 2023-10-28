@@ -21,6 +21,9 @@ export default function Navbar() {
                     <Link className="text-white/90 hover:text-white" href="https://twitter.com/nicenonecb">
                         <FaTwitter />
                     </Link>
+                    {/*<Link href="/translate"  className="text-white/90 hover:text-white">*/}
+                    {/*    Translate*/}
+                    {/*</Link>*/}
                 </div>
             </div>
         </nav>
