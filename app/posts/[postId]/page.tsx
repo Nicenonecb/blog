@@ -4,7 +4,6 @@ import { getSortedPostsData, getPostData } from "@/lib/posts"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import UtterancesComments from "@/app/components/UtterancesComments";
-import MyGiscus from "@/app/components/Giscus";
 
 export function generateStaticParams() {
     const posts = getSortedPostsData()
@@ -57,7 +56,6 @@ export default async function Post({ params }: { params: { postId: string } }) {
                 </p>
             </article>
 
-        <MyGiscus postId={postId}></MyGiscus>
             <UtterancesComments></UtterancesComments>
         </main>
     )

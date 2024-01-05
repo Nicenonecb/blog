@@ -6,7 +6,7 @@ const UtterancesComments = () => {
         const script = document.createElement('script');
         script.src = "https://utteranc.es/client.js";
         script.async = true;
-        script.setAttribute("repo", "blog");
+        script.setAttribute("repo", "Nicenonecb/blog");
         script.setAttribute("issue-term", "/posts");
         script.setAttribute("theme", "github-light");
         script.setAttribute("crossorigin", "anonymous");
