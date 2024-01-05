@@ -3,6 +3,7 @@ import { getSortedPostsData, getPostData } from "@/lib/posts"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import UtterancesComments from "@/app/components/UtterancesComments";
+import Giscus from "@giscus/react";
 
 export function generateStaticParams() {
     const posts = getSortedPostsData()
@@ -54,6 +55,22 @@ export default async function Post({ params }: { params: { postId: string } }) {
                     <Link href="/">← Back to home</Link>
                 </p>
             </article>
+
+            <Giscus
+                id="comments"
+                repo="Nicenonecb/blog"
+                repoId="699433356"
+                category="Announcements"
+                categoryId={postId}
+                mapping="specific"
+                term="Welcome to @giscus/react component!"
+                reactionsEnabled="1"
+                emitMetadata="0"
+                inputPosition="top"
+                theme="light"
+                lang="en"
+                loading="lazy"
+            />
             <UtterancesComments></UtterancesComments>
         </main>
     )
