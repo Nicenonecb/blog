@@ -1,13 +1,15 @@
+'use client'
 import Giscus from '@giscus/react';
 
-export default function MyApp() {
+export default function MyGiscus(props: any) {
+    const  {postId} = props
     return (
         <Giscus
             id="comments"
             repo="Nicenonecb/blog"
             repoId="699433356"
             category="Announcements"
-            categoryId="DIC_kwDOF1L2fM4B-hVS"
+            categoryId={postId}
             mapping="specific"
             term="Welcome to @giscus/react component!"
             reactionsEnabled="1"
