@@ -1,13 +1,14 @@
 "use client"
 import React, { useEffect } from 'react';
 
-const UtterancesComments = () => {
+const UtterancesComments = (props) => {
+    const { postId } = props
     useEffect(() => {
         const script = document.createElement('script');
         script.src = "https://utteranc.es/client.js";
         script.async = true;
         script.setAttribute("repo", "Nicenonecb/blog");
-        script.setAttribute("issue-term", "/posts");
+        script.setAttribute("issue-term", `/posts/${postId}`);
         script.setAttribute("theme", "github-light");
         script.setAttribute("crossorigin", "anonymous");
 

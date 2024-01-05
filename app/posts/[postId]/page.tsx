@@ -56,7 +56,7 @@ export default async function Post({ params }: { params: { postId: string } }) {
                 </p>
             </article>
 
-            <UtterancesComments></UtterancesComments>
+            <UtterancesComments postId={postId}></UtterancesComments>
         </main>
     )
 }
