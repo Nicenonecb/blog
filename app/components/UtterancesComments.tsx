@@ -6,7 +6,7 @@ const UtterancesComments = () => {
         script.src = "https://utteranc.es/client.js";
         script.async = true;
         script.setAttribute("repo", "blog");
-        script.setAttribute("issue-term", `https://blog-three-green-37.vercel.app/posts/${id}`);
+        script.setAttribute("issue-term", "https://blog-three-green-37.vercel.app/posts");
         script.setAttribute("theme", "github-light");
         script.setAttribute("crossorigin", "anonymous");
 

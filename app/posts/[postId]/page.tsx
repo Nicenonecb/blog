@@ -2,6 +2,7 @@ import getFormattedDate from "@/lib/getFormattedDate"
 import { getSortedPostsData, getPostData } from "@/lib/posts"
 import { notFound } from "next/navigation"
 import Link from "next/link"
+import UtterancesComments from "@/app/components/UtterancesComments";
 
 export function generateStaticParams() {
     const posts = getSortedPostsData()
@@ -48,6 +49,7 @@ export default async function Post({ params }: { params: { postId: string } }) {
             </p>
             <article>
                 <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
+                <UtterancesComments></UtterancesComments>
                 <p>
                     <Link href="/">← Back to home</Link>
                 </p>
