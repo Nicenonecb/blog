@@ -49,11 +49,12 @@ export default async function Post({ params }: { params: { postId: string } }) {
             </p>
             <article>
                 <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
-                <UtterancesComments></UtterancesComments>
+
                 <p>
                     <Link href="/">← Back to home</Link>
                 </p>
             </article>
+            <UtterancesComments></UtterancesComments>
         </main>
     )
 }
