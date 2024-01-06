@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from 'react';
 
-const UtterancesComments = (props) => {
+const UtterancesComments = (props:any) => {
     const { postId } = props
     useEffect(() => {
         const script = document.createElement('script');
