@@ -1,6 +1,7 @@
 ---
 title: 'content-visibility使用&性能优化&相关原理探究 - 附demo'
 date: '2023-10-26'
+tag: 'tech'
 ---
 
 ## content-visibility使用
